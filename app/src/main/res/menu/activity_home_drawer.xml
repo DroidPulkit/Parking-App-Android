@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_payment_receipt"
+            android:icon="@drawable/paymenticon"
+            android:title="Parking Payment Receipt" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/locationicon"
+            android:title="Parking Location" />
+        <item
+            android:id="@+id/nav_parking_manual"
+            android:icon="@drawable/parkingmanualicon"
+            android:title="Parking Manual" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/reporticon"
+            android:title="Parking Report" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profileicon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_support_contact"
+            android:icon="@drawable/supporticon"
+            android:title="Support Contact" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logouticon"
+            android:title="Logout" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

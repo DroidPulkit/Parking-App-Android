@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cityArray">
+        <item>Toronto</item>
+        <item>Scarborough</item>
+        <item>Etobicoke</item>
+        <item>Vancouver</item>
+        <item>NorthYork</item>
+    </string-array>
+    <string-array name="carName">
+        <item>BMW</item>
+        <item>Audi</item>
+        <item>Mercedes</item>
+        <item>Ferrari</item>
+        <item>Bugatti</item>
+    </string-array>
+    <string-array name="paymentMethod">
+        <item>Debit</item>
+        <item>Visa</item>
+        <item>Master card</item>
+        <item>American Express</item>
+    </string-array>
+    <string-array name="lots">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+    </string-array>
+    <string-array name="spots">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="carColor">
+        <item>Red</item>
+        <item>Black</item>
+        <item>White</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+    </string-array>
+</resources>
