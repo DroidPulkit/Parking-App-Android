@@ -57,27 +57,19 @@ public class SupportActivity extends AppCompatActivity implements View.OnClickLi
         }
     }
 
+    //No permission required
     private void makeCall(){
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:6476857191"));
-
-        if(ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
-            Toast.makeText(getApplicationContext(), "Call permission denied",Toast.LENGTH_LONG).show();
-            return;
-        }
-        startActivity(callIntent);
-
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:6476857191"));
+        startActivity(intent);
     }
 
+    //No permission required
     private void sendSMS(){
-        Intent smsIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:6477742880"));
-        smsIntent.putExtra("sms body", "Test message");
-
-        if(ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED){
-            Toast.makeText(getApplicationContext(), "SMS permission denied", Toast.LENGTH_LONG).show();
-            return;
-        }
-        startActivity(smsIntent);
+        Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+        sendIntent.setData(Uri.parse("sms:6477742880"));
+        sendIntent.putExtra("sms_body", "Hey, we need help");
+        startActivity(sendIntent);
     }
 
     private void sendEmail(){
